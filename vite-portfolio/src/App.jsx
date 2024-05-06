@@ -7,9 +7,9 @@ import Home from './Components/Home'; // Import Home component
 function App() {
   return (
     <Router>
-      <div style={{ display: 'flex' }}>
+      <div className="app-container">
         <Navbar />
-        <div style={{ flexGrow: 1, textAlign: 'center', padding: '20px' }}>
+        <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />

@@ -1,7 +1,95 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Navbar.css */
+.NavBar {
+  border-right: 2px solid rgb(82, 81, 81);
+  padding: 1rem;
+  background-color: rgb(32, 32, 32);
+  width: 14rem; /* Fixed width */
+  min-width: 14rem; /* Minimum width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  overflow-y: auto; /* Enable scrollbar for the navbar */
+  position: fixed; /* Fixed position */
+  top: 0; /* Fixed position from the top */
+  bottom: 0; /* Fixed position from the bottom */
 }
- */
+
+.NavBar > h2 {
+  font-weight: 500;
+  color: rgb(212, 212, 212); /* Text color */
+}
+
+.NavBar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem; /* Add margin-top for the list */
+}
+
+.NavBar li {
+  padding-bottom: 0.3rem;
+}
+
+.NavBar li a {
+  text-decoration: none;
+  color: rgb(225, 225, 225);
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  padding: 0.3rem;
+}
+
+.NavBar li a:hover {
+  background-color: rgb(64, 64, 64);
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.NavBar::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.NavBar::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Background color of the track */
+}
+
+.NavBar::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(82, 81, 81); /* Color of the thumb */
+  border-radius: 10px; /* Border radius of the thumb */
+}
+
+.NavBar::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.divider {
+  font-weight: 100;
+  text-decoration: underline;
+}
+
+/* App.css */
+.app-container {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  text-align: left;
+  padding: 2rem 12rem; /* 2rem top and bottom, 12rem left and right */
+  margin-top: 2rem;
+  margin-left: 14rem; /* Adjust to match the width of the navbar */
+  color: rgb(188, 197, 206);
+  overflow-y: auto; /* Enable scrollbar for the content */
+}
+
+.content h2 {
+  color: rgb(212, 212, 212);
+  font-weight: 700;
+}
+
+.cover {
+  padding: 0;
+  width: 100%;
+  height: 10rem;
+}
