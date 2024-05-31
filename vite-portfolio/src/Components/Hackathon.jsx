@@ -1,6 +1,6 @@
 import cover from '../assets/cover1.jpg'
 import InfoHack from '../InfoHack';
-
+import { FaGithub, FaGlobe } from 'react-icons/fa';
 function Hackathon() {
     const renderCards = () => {
         return InfoHack.map((project) => (
@@ -12,8 +12,8 @@ function Hackathon() {
                     <h3 className="personal-card--title">{project.name}</h3>
                     <p className="personal-card--description">{project.description}</p>
                     <div className="personal-card--links">
-                        <a href={project.githubLink} className="personal-card--link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href={project.liveLink} className="personal-card--link" target="_blank" rel="noopener noreferrer">Live</a>
+                        <a href={project.githubLink} className="personal-card--link" target="_blank" rel="noopener noreferrer"><FaGithub className='link-icon'/></a>
+                        <a href={project.liveLink} className="personal-card--link" target="_blank" rel="noopener noreferrer"><FaGlobe className="link-icon" /></a>
                     </div>
                 </div>
             </div>
