@@ -8,6 +8,15 @@ const InfoHack = [
         liveLink: "https://smart-health-monitoring-system.example.com"
     },
     {
+        id: 1,
+        coverImg: '"https://via.placeholder.com/150',
+        name: 'Project 1',
+        description: 'Description of project 1',
+        githubLink: 'https://github.com/project1',
+        liveLink: 'https://liveproject1.com',
+        techStack: ['React', 'Node.js', 'CSS']
+    },
+    {
         id: 2,
         name: "Eco-Friendly Logistics Optimization",
         coverImg: "https://via.placeholder.com/150", // Replace with actual image URL or path

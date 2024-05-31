@@ -14,9 +14,9 @@ export default function Navbar() {
         <li><Link to="/personal">Personal</Link></li>
         <li><Link to="/hackathon">Hackathons</Link></li>
         <li className="divider">Online</li>
-        <li><Link to="/stack">Twitter</Link></li>
-        <li><Link to="/stack">LinkedIn</Link></li>
-        <li><Link to="/stack">GitHub</Link></li>
+        <li><a href="https://twitter.com/kaurmanjot20" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/in/manjot-kaur-6595a0281" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/kaurmanjot20" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         {/* Add more links as needed */}
       </ul>
     </div>
