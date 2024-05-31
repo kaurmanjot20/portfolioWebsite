@@ -1,20 +1,42 @@
-function Stack() {
-  const stacks = [
-    { id: 1, name: 'Stack 1' },
-    { id: 2, name: 'Stack 2' },
-    { id: 3, name: 'Stack 3' },
-  ];
+import React from 'react';
+import cover from '../assets/cover1.jpg';
+import InfoStack from '../InfoStack';
+import Card from './Card';
 
-  return (
-    <div>
-      <h2>Stacks</h2>
-      <ul>
-        {stacks.map((stack) => (
-          <li key={stack.id}>{stack.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+function Stack() {
+    const renderCards = (items) => {
+        return items.map((item) => (
+            <Card
+                key={item.id}
+                coverImg={item.coverImg}
+                title={item.title}
+            />
+        ));
+    };
+
+    return (
+        <div>
+            <div>
+                <img src={cover} className='cover' alt='Cover'/>
+            </div>
+            <div className="stack-container">
+                <h2>Stack</h2>
+                <div className="cards-row">
+                    {renderCards(InfoStack.stack)}
+                </div>
+
+                <h2>Programming Languages</h2>
+                <div className="cards-row">
+                    {renderCards(InfoStack.programmingLanguages)}
+                </div>
+
+                <h2>Tools</h2>
+                <div className="cards-row">
+                    {renderCards(InfoStack.tools)}
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default Stack;
