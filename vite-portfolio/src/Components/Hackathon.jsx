@@ -1,4 +1,4 @@
-import cover from '../assets/cover1.jpg'
+
 import InfoHack from '../InfoHack';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 function Hackathon() {
@@ -22,8 +22,8 @@ function Hackathon() {
 
     return (
         <div className="personal-container">
-            <img src={cover} className='cover'/>
-            <h2>Hackathon</h2>
+            
+            <h2 className="h2">Hackathon</h2>
             <div className="personal-cards-row">
                 {renderCards()}
             </div>
