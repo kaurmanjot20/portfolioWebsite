@@ -29,6 +29,44 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+.mark-orange {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1.5em 0.1em 1em 0.2em;
+  background-image: linear-gradient(-100deg, #ff9900, #ff6600);
+}
+.mark-blue {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1.5em 0.1em 1em 0.2em;
+  background-image: linear-gradient(-100deg, #00ccff, #007fff);
+}
+.mark-purple {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1.5em 0.1em 1em 0.2em;
+  background-image: linear-gradient(-100deg, #9933ff, #6600cc);
+}
+.mark-pink {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1.5em 0.1em 1em 0.2em;
+  background-image: linear-gradient(-100deg, #ff6699, #ff00cc);
+}
+.mark-green {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1.5em 0.1em 1em 0.2em;
+  background-image: linear-gradient(-100deg, #00ff00, #00cc00);
+}
+.mark-yellow {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1.5em 0.1em 1em 0.2em;
+  background-image: linear-gradient(-100deg, #ffff00, #ffcc00);
+}
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

@@ -5,7 +5,8 @@ const InfoHack = [
         coverImg: "https://via.placeholder.com/150", // Replace with actual image URL or path
         description: "Sahayak empowers vulnerable children worldwide by centralizing orphanage support. This streamlined platform simplifies access to essential information, enhances advocacy efforts, and fosters community engagement. By connecting individuals and organizations, Sahayak drives collective action for lasting change. Through strategic resource allocation, safety measures, and educational initiatives, Sahayak enables tangible impact, ensuring a brighter future for every child",
         githubLink: "https://github.com/user/smart-health-monitoring-system",
-        liveLink: "https://smart-health-monitoring-system.example.com"
+        liveLink: "https://smart-health-monitoring-system.example.com",
+        techStack: ["HTML", "CSS", "JavaScript", "React"]
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const InfoHack = [
         coverImg: "https://via.placeholder.com/150", // Replace with actual image URL or path
         description: "An AI-based solution to optimize logistics routes for reducing carbon footprints.",
         githubLink: "https://github.com/user/eco-friendly-logistics-optimization",
-        liveLink: "https://eco-friendly-logistics-optimization.example.com"
+        liveLink: "https://eco-friendly-logistics-optimization.example.com",
+        techStack: ["HTML", "CSS", "JavaScript", "React"]
     },
     {
         id: 3,

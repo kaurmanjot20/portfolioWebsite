@@ -127,7 +127,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .content p, .personal-card--content {
   font-family: 'Open Sans', sans-serif;
-  line-height: 2.6;
+  line-height: 1.8;
   margin-bottom: 1rem;
 }
 
@@ -217,7 +217,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background-color: rgba(82, 81, 81, 0.2); /* Color of the background card */
+  
   border-radius: 8px;
   z-index: -1; /* Ensures it stays behind the main card */
   transition: all 0.3s ease;
@@ -234,7 +234,7 @@ body::-webkit-scrollbar-thumb:hover {
     0 4px 12px rgba(212, 212, 212, 0.2),
     8px 32px 32px rgba(82, 81, 81, 0.2),
     8px 64px 64px rgba(82, 81, 81, 0.2);
-  transform: scale(1.05) translateY(-0.5rem);
+  transform: scale(1) translateY(-0.3rem);
 }
 
 /* Hover effect for the layered background */
@@ -244,15 +244,26 @@ body::-webkit-scrollbar-thumb:hover {
   left: 5px;
   right: 5px;
   bottom: 5px;
-  background-color: rgba(82, 81, 81, 0.4); /* Darkens the background card on hover */
+  
+}
+.card--tech-stack, .personal-card--tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-/* Stack page container */
-.stack-container {
-  padding: 2rem;
-  background-color: rgb(44, 44, 44);
+.card--tech-item, .personal-card--tech-item {
+  background-color: rgba(247, 211, 10, 0.7); /* Use a different shade here */
+  color: #090909;
+  
+  padding: 0.2rem;
+  padding-bottom: 0;
+  margin: 0; /* Remove margin */
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1; /* Ensure no extra space due to line height */
 }
-
 /* Headings */
 .stack-container h2 {
   color: var(--CONTENT-H2-COLOR);
