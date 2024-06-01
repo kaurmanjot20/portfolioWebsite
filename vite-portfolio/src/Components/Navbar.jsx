@@ -50,9 +50,9 @@ export default function Navbar() {
           </a>
         </li>
         <li className="nav-link">
-          <a href="mailto:work.manjotkaur@gmail.com">
-            <FaEnvelope className="nav-icon" /> Contact
-          </a>
+          <Link to="/contact"> {/* Changed to Contact */}
+            <FaEnvelope className="nav-icon" /> Contact {/* Changed to email icon */}
+          </Link>
         </li>
       </ul>
     </div>
