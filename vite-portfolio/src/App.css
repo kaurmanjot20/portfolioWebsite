@@ -141,6 +141,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .personal-card {
   display: flex;
+  flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 1rem;
@@ -152,10 +153,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .personal-card--image {
-  width: 30%;
+  width: 80%; /* Adjust as needed */
+  align-self: center;
   height: auto;
   border-radius: 4px;
   margin-right: 1rem;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.personal-card--image img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .personal-card--content {
@@ -164,7 +172,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .personal-card--title {
-  margin-top: 0;
+  text-align: center;
+  margin-top: 0.4rem;
   font-size: 1.2rem;
   color: var(--NAV-COLOR);
 }
