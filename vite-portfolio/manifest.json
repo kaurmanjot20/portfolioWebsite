@@ -1,0 +1,22 @@
+{
+    "name": "Manjot Kaur Portfolio",
+    "short_name": "Portfolio",
+    "description": "Portfolio website of Manjot Kaur",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "rgb(41, 177, 41)",
+    "background_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/src/profile-pic.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/src/profile-pic.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

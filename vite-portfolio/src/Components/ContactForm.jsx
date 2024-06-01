@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from '../firebase';
 import { ref, push } from 'firebase/database';
 
@@ -29,7 +29,8 @@ const ContactForm = () => {
             console.log('Form submitted successfully!');
             setSuccessMessage('Form submitted successfully!');
             setErrorMessage('');
-            // Optionally, reset the form after submission
+
+            // Reset the form after submission
             setFormData({
                 name: '',
                 email: '',
@@ -42,42 +43,68 @@ const ContactForm = () => {
         }
     };
 
+    useEffect(() => {
+        let successTimeout;
+        let errorTimeout;
+
+        if (successMessage) {
+            successTimeout = setTimeout(() => {
+                setSuccessMessage('');
+            }, 3000); // Message will disappear after 3 seconds
+        }
+
+        if (errorMessage) {
+            errorTimeout = setTimeout(() => {
+                setErrorMessage('');
+            }, 3000); // Message will disappear after 3 seconds
+        }
+
+        // Clean up the timeout on component unmount or when messages change
+        return () => {
+            clearTimeout(successTimeout);
+            clearTimeout(errorTimeout);
+        };
+    }, [successMessage, errorMessage]);
+
     return (
         <div className="contact-form-container">
             <h2>Contact Me</h2>
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
-                </div>
+            <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            autoComplete="name" // Set autocomplete to "name"
+            required
+        />
+    </div>
+    <div className="form-group">
+        <label htmlFor="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            autoComplete="email" // Set autocomplete to "email"
+            required
+        />
+    </div>
+    <div className="form-group">
+        <label htmlFor="message">Message</label>
+        <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            autoComplete="off" // You can set it to "off" if it's not applicable
+            required
+        ></textarea>
+    </div>
                 <button type="submit">Send</button>
             </form>
             {successMessage && <p className="success-message">{successMessage}</p>}

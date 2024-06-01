@@ -381,7 +381,7 @@ button[type='submit'] {
   width: 40%;
   padding: 0.75rem;
   background-color: var(--ACCENT-COLOR);
-  color: #fff;
+  color: #0e0e0e;
   margin: auto;
   border: none;
   border-radius: 4px;
@@ -391,4 +391,26 @@ button[type='submit'] {
 
 button[type='submit']:hover {
   background-color: #ffbb33;
+}
+/*  ERROR ****************************************************/
+.success-message,
+.error-message {
+    text-align: center;
+    border: 2px solid var(--NAV-COLOR);
+    background-color: rgb(41, 177, 41);
+    color: var(--NAV-COLOR);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: block; /* Change display property to block */
+    width: 40%;
+    box-sizing: border-box;
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
+}
+
+.error-message {
+    border: 2px solid #ff4d4d;
+    background-color: var(--ACCENT-COLOR);
+    color: #ff4d4d;
 }
