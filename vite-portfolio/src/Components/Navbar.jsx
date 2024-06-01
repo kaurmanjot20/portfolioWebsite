@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaTwitter, FaLinkedin, FaGithub, FaDownload, FaBook, FaLightbulb, FaUsers, FaHome, FaQuestionCircle } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaDownload, FaBook, FaLightbulb, FaUsers, FaHome, FaEnvelope } from 'react-icons/fa'; // Changed FaQuestionCircle to FaEnvelope
 
 export default function Navbar() {
   return (
@@ -20,11 +20,6 @@ export default function Navbar() {
         <li className="nav-link">
           <Link to="/stack">
             <FaBook className="nav-icon" /> Tech Stack
-          </Link>
-        </li>
-        <li className="nav-link">
-          <Link to="/ama">
-            <FaQuestionCircle className="nav-icon" /> AMA
           </Link>
         </li>
         <li className="divider">Projects</li>
@@ -53,6 +48,11 @@ export default function Navbar() {
           <a href="https://github.com/kaurmanjot20" target="_blank" rel="noopener noreferrer">
             <FaGithub className="nav-icon" /> GitHub
           </a>
+        </li>
+        <li className="nav-link">
+          <Link to="/contact"> {/* Changed to Contact */}
+            <FaEnvelope className="nav-icon" /> Contact {/* Changed to email icon */}
+          </Link>
         </li>
       </ul>
     </div>

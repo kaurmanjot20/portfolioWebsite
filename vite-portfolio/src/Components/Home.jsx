@@ -3,8 +3,8 @@ export default function Home() {
   return (
     <div>
       <img src={cover} className='cover'/>
-      <h2>Hey folks</h2>
-      <p>Hi there! I am Manjot Kaur, a<mark className='mark-orange'> web developer </mark> and designer who enjoys creating clean, smart, and effective websites. Currently, I am pursuing my computer engineering degree at Thapar Institute of Engineering & Technology, Patiala.</p>
+      <h2>Hi there!</h2>
+      <p>I am Manjot Kaur, a<mark className='mark-orange'> web developer </mark> and designer who enjoys creating clean, smart, and effective websites. Currently, I am pursuing my computer engineering degree at Thapar Institute of Engineering & Technology, Patiala.</p>
       
       <p>I have a huge passion for exploring various tech domains, from <mark className='mark-pink'>  UI/UX </mark> design to the fascinating realms of <mark className='mark-blue'> AI/ML </mark>. I am always on the lookout for new challenges and love experimenting with fresh ideas and technologies. Whether it is designing a user-friendly interface or developing a complex algorithm, I enjoy every bit of the journey.</p>
       
