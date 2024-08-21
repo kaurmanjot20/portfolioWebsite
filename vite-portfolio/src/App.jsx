@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/personal" element={<Personal />} /> {/* Route to Personal component */}
+            <Route path="/personal" element={<Personal />} />
             <Route path="/hackathon" element={<Hackathon />} />
             <Route path="/stack" element={<Stack />} />
             <Route path="/contact" element={<ContactForm />} />
